@@ -1,0 +1,237 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:wght@300&display=swap');
+header{
+    text-align: center;
+    position: relative;
+    transition: var(--transition);
+    height: 450px;
+}
+header::before{
+    position: absolute;
+    background:  rgb(13, 1, 46); 
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    content: "";
+    clip-path: ellipse(100% 100% at 50% 0);
+    z-index: -1;
+
+}
+header-center{
+     position: relative;
+     padding-top: 2rem;
+     padding-bottom: 8.77rem;
+     margin-bottom: 8.77rem;
+    
+}
+.head{
+    display: flex;
+    justify-content: space-between;
+    justify-content: baseline;
+    padding: 20px;
+}
+.apply p{
+    color: white;
+    border-bottom: 2px solid;
+    border-color: rgb(45, 251, 189);
+    cursor: pointer;
+    margin-right: 50px;
+}
+.text{
+    text-align: center;
+}
+.data{
+    color: white;
+    font-family: 'fraunces';
+    font-weight:lighter;
+    font-size: 18px;
+
+}
+.lined{
+    border-bottom: 2px solid;
+    border-color:rgb(45, 251, 189) ;
+}
+
+.btn button{
+    background:rgb(45, 251, 189);
+    border: none;
+    width: 100px;
+    height: 35px;
+}
+.phone img{
+    margin-top: 10px;
+}
+.spring{
+    position: relative;
+    right: 38rem;
+    top: 3rem;
+}
+.down{
+    display: flex;
+    margin: 15%;
+    padding: 4%;
+}
+.dwn{
+    position: relative;
+    background-color: #fcf8ff;
+    clip-path: ellipse(170% 100% at 50% 0);
+    margin-top: -30rem;
+    padding-top: 30rem;
+    height: 600px;
+    z-index: -2;
+
+}
+.action{
+   padding: 10px;
+}
+.driven{
+    padding: 10px;
+}
+.always{
+    padding: 10px;
+}
+.one{
+    border-radius: 20px;
+    width: 30px;
+    height: 30px;
+    background: none;
+}
+.last{
+    background: rgb(13, 1, 46);
+    width: 40%;
+    margin-left: 35%;
+    padding: 40px;
+    font-size: 20px;
+   position: relative;
+}
+
+ p{
+    font-family: 'manrope';
+    font-size: 20px;
+}
+.test{
+    color: white;
+}
+.img-text{
+    position: relative;
+    top: 15rem;
+
+}
+.pic{
+    position: absolute;
+    z-index: -1;
+    top: -150px;
+    margin-left: 16%;
+}
+.bg{
+    position: absolute;
+    bottom: -30px;
+    right: 50px;
+    width: 18%;
+}
+.access button{
+    background:rgb(45, 251, 189);
+    border: none;
+    width: 120px;
+    height: 35px;
+    
+}
+.futter{
+    text-align: center;
+    margin-top: 50px;
+    position: relative;
+    top: 20rem;
+
+}
+.icon{
+    margin-top: 30px ;
+    margin-bottom: 40px;
+}
+.icn{
+    margin: 7px;
+}
+
+/* Responsiveness */
+ 
+@media screen and (max-width: 335px) {
+    @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@300&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Fraunces:wght@300&display=swap');
+    .logo img{
+        width: 250%;
+    }
+    .apply p{
+        width: 105px;
+        margin-left: 40%;
+        font-size: 14px;
+    }
+    .head{
+        align-items: baseline;
+        padding-top: 0rem;
+    }
+    .sprg{
+        display: none;
+    }
+    .phone img{
+        width: 80%;
+        margin-top: 15%;
+    } 
+    header::before{
+        background:  rgb(13, 1, 46); 
+        top: 0;
+        right: 0;
+        bottom: 30px;
+        left: 0;
+        clip-path: ellipse(130% 95% at 50% 0);
+        z-index: -1;
+    }
+    .down{
+        display: block;
+        
+    }
+    .dwn{
+        position: relative;
+        background-color: #fcf8ff;
+        clip-path: ellipse(250% 99% at 50% 0);
+        margin-top: -30rem;
+        padding-top: 30rem;
+        height: 500%;
+        z-index: -2;
+    }
+    .one{
+        margin-left: 60px;
+        font-family: 'fraunces';
+    }
+    p{
+        font-family: 'manrope';
+        font-size: 20px;
+    }
+    .pic img{
+        width: 95%;
+    }
+    .pic{
+        top: -15rem;
+        margin-left:auto ;
+    }
+    .last{
+        width: 80%;
+        margin-left: auto;
+        padding: 30px;
+    }
+    .last p{
+        font-size: small;
+        line-height: 20px;
+    }
+    .test{
+        margin-top: -9%;
+    }
+    .bg{
+        display: none;
+    }
+    .futter{
+        top: 15rem;
+    }
+    .icn{
+        margin-bottom: 20%;
+    }
+}
